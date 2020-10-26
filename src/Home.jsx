@@ -1,23 +1,33 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import Recipe from './Recipe';
 const axios = require('axios');
 
 const Home = () => {
+  const [recipes, setRecipes] = useState([])
 
   const getRecipes = async () => {
     try {
-      return await axios.get(`recipe/all`, {baseURL: 'http://localhost:6969/'});
+      const response = await axios.get(`recipe/all`, {baseURL: 'http://localhost:6969/'});
+      setRecipes(response.data)
     } catch (e) {
       console.log(e);
     }
   }
+
     useEffect(() => {
-        const recipes = getRecipes()
-        console.log(recipes);
+        getRecipes()
     }, [])
 
   return (
     <div>
-      Welcome home
+      {recipes.length > 0 && recipes.map(recipe => {
+        return (
+          <Recipe
+          {...recipe}
+          key={recipe.id}
+          />
+        )
+      })}
     </div>
   );
 }
