@@ -26,10 +26,10 @@ const Recipe = ({name, url, ingredients, instructions, notes}) => {
 
   return (
     <div className="card">
-        <div className="header">
+        <div className="card-header">
           <p>{name}</p>
         </div>
-            <div className="container">
+            <div className="card-content">
             <a href={url}>URL</a>
             <h3>Ingredients</h3>
             <div>

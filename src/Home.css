@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.header {
+  background-color: hsla(230, 40%, 50%, 1);
+  width: 100%;
+  text-align: center;
+  font-family: "Righteous", serif;
+  font-size: 40px;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+.content {
+  margin-top: 50px;
+  position: absolute;
+}
