@@ -27,7 +27,8 @@ const Recipe = ({name, url, ingredients, instructions, notes}) => {
   return (
     <div className="card">
         <div className="card-header">
-          <p>{name}</p>
+          <div className='recipeName'>{name}</div>
+          <div className='moveRecipe'>Move</div>
         </div>
             <div className="card-content">
             <a href={url}>URL</a>

@@ -1,15 +1,25 @@
 .card {
-  width: 70%;
+  width: 60rem;
   display: flex;
   flex-direction: column;
   border: 1px lightblue solid;
   margin: 15px 225px;
 }
 .card-header {
-  height: 50%;
+  height: 35px;
+  line-height: 35px;
   background: lightblue;
   color: white;
   text-align: center;
+  display: inline;
+}
+.moveRecipe {
+  float: right;
+  margin-right: 15px;
+}
+.recipeName {
+  display: inline-block;
+  margin-left: 15px;
 }
 .card-content {
   padding: 2px 16px;

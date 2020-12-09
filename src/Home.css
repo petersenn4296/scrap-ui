@@ -5,14 +5,38 @@
   width: 100%;
   text-align: center;
   font-family: "Righteous", serif;
-  font-size: 40px;
+  font-size: 75px;
   text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
   color: white;
   position: fixed;
   z-index: 1;
 }
 
+.categories {
+  position: absolute;
+  background-color: aquamarine;
+  width: 100%;
+  margin-top: 93px;
+  display: inline;
+  height: 50px;
+  line-height: 50px;
+}
+
+.category {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.category:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.addCategory {
+  float: right;
+  margin-right: 15px;
+}
+
 .content {
-  margin-top: 50px;
+  margin-top: 145px;
   position: absolute;
 }
