@@ -29,7 +29,7 @@ const Home = () => {
         Scrapr
       </div>
       <Router>
-      <NavBar>
+      <NavBar getRecipesAndCategories={getRecipesAndCategories}>
         {categories.map(category => {
            return (
              <Link

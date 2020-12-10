@@ -8,8 +8,8 @@ const Category = ({id}) => {
 
   const getRecipesPerCategory = async () => {
     try {
-      const getAllrecipes = await axios.get(id  ? `recipe/category/${id}` : 'recipe/all', {baseURL: 'http://localhost:6969/'});
-      setRecipes(getAllrecipes.data)
+      const recipesByCategory = await axios.get(id  ? `recipe/category/${id}` : 'recipe/all', {baseURL: 'http://localhost:6969/'});
+      setRecipes(recipesByCategory.data)
     } catch (e) {
       console.log(e);
     }
